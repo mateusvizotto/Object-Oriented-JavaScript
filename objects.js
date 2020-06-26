@@ -1,3 +1,19 @@
+function User(email, name) {
+    this.email = email;
+    this.name = name;
+    this.online = false;
+    this.login = function () {
+        console.log(this.email, 'has logged in');
+    }
+}
+
+var userOne = new User('ryu@ninjas.com', 'Ryu');
+var userTwo = new User('yoshi@ninjas.com', 'Yoshi');
+
+console.log(userOne);
+userTwo.login();
+
+/*
 class User {
     constructor(email, name) {
         this.email = email;
@@ -26,9 +42,9 @@ class Admin extends User {
         })
     }
 }
+*/
 
-var userOne = new User('ryu@ninjas.com', 'Ryu');
-var userTwo = new User('yoshi@ninjas.com', 'Yoshi');
+/*
 var admin = new Admin('shaun@ninjas.com', 'Shaun');
 
 var users = [userOne, userTwo, admin];
@@ -37,3 +53,4 @@ var users = [userOne, userTwo, admin];
 userOne.deleteUser(userTwo);
 
 console.log(users);
+*/
